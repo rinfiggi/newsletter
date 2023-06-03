@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>rinfiggi - newsletter</title>
+  <style>
+    /* Stili CSS personalizzati */
+    body {
+      font-family: 'VT323', monospace;
+      margin: 0;
+      padding: 0;
+      background-image: url('https://i.gifer.com/JZS3.gif');
+      background-size: cover;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      height: 100vh;
+      box-sizing: border-box;
+      color: #fff;
+    }
+
+    h1 {
+      font-family: 'VT323', monospace;
+      font-size: 48px;
+      margin: 20px 0;
+      color: #fff;
+    }
+
+    .newsletter-form {
+      margin-top: 30px;
+      font-size: 18px;
+    }
+
+    .newsletter-form label {
+      display: block;
+      margin-bottom: 10px;
+      color: #fff;
+    }
+
+    .newsletter-form input[type="email"] {
+      padding: 5px;
+      font-size: 16px;
+      border: none;
+      border-radius: 4px;
+    }
+
+    .newsletter-form input[type="submit"] {
+      padding: 10px 20px;
+      font-size: 16px;
+      background-color: #333;
+      color: #fff;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .newsletter-form input[type="submit"]:hover {
+      background-color: #555;
+    }
+
+    .home-link {
+      margin-top: 30px;
+      font-size: 14px;
+    }
+
+    .home-link a {
+      color: #fff;
+      text-decoration: none;
+    }
+
+    .home-link a:hover {
+      color: #999;
+    }
+
+    .social-icons {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-top: 30px;
+    }
+
+    .social-icons a {
+      margin: 0 10px;
+      text-decoration: none;
+      color: #fff;
+      font-size: 24px;
+    }
+
+    .social-icons a:hover {
+      color: #999;
+    }
+  </style>
+  <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/95297968bf.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <!-- Intestazione -->
+  <header>
+    <h1>newsletter</h1>
+  </header>
+
+  <!-- Form di iscrizione alla newsletter -->
+  <div class="newsletter-form">
+    <form action="subscribe.php" method="post">
+      <label for="email">aggiornamenti musica, disgrazie e chiacchierate:</label>
+      <input type="email" id="email" name="email" required>
+      <input type="submit" value="iscriviti">
+    </form>
+  </div>
+
+  <!-- Tasto per tornare alla homepage -->
+  <div class="home-link">
+    <a href="https://home.rinfiggi.eu">&lt;&lt; home</a>
+  </div>
+
+  <!-- Icone dei social -->
+  <div class="social-icons">
+    <a href="https://www.instagram.com/rinfiggi" target="_blank"><i class="fab fa-instagram"></i></a>
+    <a href="https://www.twitter.com/rinfiggi" target="_blank"><i class="fab fa-twitter"></i></a>
+    <a href="https://www.facebook.com/rnfgg" target="_blank"><i class="fab fa-facebook"></i></a>
+  </div>
+</body>
+</html>
